@@ -454,12 +454,12 @@ function draw()
  
  if(keyWentDown(UP_ARROW))
   {
-    Man.velocityY=-100;
+    Man.velocityY=-10;
     Man.addAnimation("walk ",Man_walk);
   }
   else if(keyDown(DOWN_ARROW))
   {
-    Man.velocityY= 100;
+    Man.velocityY= 10;
     Man.addAnimation("walk2 ",Man_walk);
 
   }
@@ -467,14 +467,14 @@ function draw()
   {
     Man.mirrorX(1);
     Man.addAnimation("walk3 ",Man_walk);
-    Man.velocityX= 100;
+    Man.velocityX= 10;
     
   }
   else if(keyDown(LEFT_ARROW))
   {
     Man.mirrorX(-1);
     Man.addAnimation("walk4 ",Man_walk);
-    Man.velocityX= -100;
+    Man.velocityX= -10;
     
   }
 
